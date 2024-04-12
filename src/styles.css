@@ -17,7 +17,8 @@
 }
 
 body {
-    width: 430px;
+    width: 490px;
+    overflow-x: hidden;
     background-color: var(--background-gray);
     font-family: var(--base-font);
 }
@@ -185,17 +186,49 @@ footer {
     background: var(--gradient-background);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
     
     body {
         width: 100vw;
+        overflow-x: hidden;
     }
 
     #banner {
         display: flex;
-        height: 836px;
+        justify-content: center;
+        height: 840px;
         flex-direction: row;
-        gap: 2.4rem;
+        gap: 10.8rem;
+        margin-left: 11rem;
+    }
+
+    #banner .banner-info {
+        order: 1;
+        margin-top: 10rem;
+      }
+
+      #banner h1 {
+        font-size: 6rem;
+        line-height: 7.2rem;
+      }
+
+      #banner p {
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
+    
+      #banner .astronaut {
+        order: 2;
+        height: 100%;
+      }
+
+      .astronaut img {
+        height: 80%;
+      }
+
+      #banner .button-down {
+        display: flex;
+        margin-top: 6rem;
     }
 
     #cards {
