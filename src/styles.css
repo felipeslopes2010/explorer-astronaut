@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    --base-font: "Mulish", sans-serif;
+    --white: #FFF;
+    --background-gray: #F9F4FB;
+    --purple-items: #B52184;
+    --text-color: #312D64;
+    --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+    width: 430px;
+    background-color: var(--background-gray);
+    font-family: var(--base-font);
+}
+
+#banner {
+    background-color: var(--background-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    color: var(--purple-items);
+    text-align: center;
+    margin-bottom: .4rem;
+}
+
+#banner p {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-bottom: 3.6rem;
+
+}
+
+.astronaut img {
+    margin-bottom: 1.6rem;
+}
+
+#banner .button-down {
+    display: flex;
+    margin-bottom: 9.2rem;
+}
+
+.button-down img {
+    margin: 0 auto;
+}
+
+#cards {
+    height: 1242px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: var(--gradient-background);
+}
+
+.card {
+    margin: 0 4rem;
+    padding: 2.6rem;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.card img {
+    margin-bottom: 3.2rem;
+}
+
+.card-info {
+    width: 265px;
+}
+
+#cards h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: var(--purple-items);
+}
+
+#cards p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+#contact {
+    padding: 8rem 0 6.8rem;
+    background-color: var(--light-gray);
+}
+
+form {
+    margin: 0 4rem;
+}
+
+#contact h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 4rem;
+    margin-bottom: 4.4rem;
+    color: var(--purple-items);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    border: none;
+}
+
+input,textarea {
+    width: 100%;
+    border: 1.5px solid var(--text-color);
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    font-family: "Mulish", sans-serif;
+}
+
+textarea {
+    margin-bottom: 2.4rem;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: (var(--text-color));
+}
+
+#button-send-message {
+    width: 150px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #FFF;
+    line-height: 2.4rem;
+    padding: 1.2rem 1.6rem;
+    cursor: pointer;
+    background: var(--gradient-background);
+}
+
+footer {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #FFF;
+    padding: 3.2rem 1.6rem;
+    background: var(--gradient-background);
+}
