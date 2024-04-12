@@ -123,22 +123,40 @@ fieldset {
     border: none;
 }
 
-input,textarea {
-    width: 100%;
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
     border: 1.5px solid var(--text-color);
     padding: 1.6rem;
     border-radius: 1.6rem;
-    font-family: "Mulish", sans-serif;
 }
 
-textarea {
-    margin-bottom: 2.4rem;
+.input-wrapper img {
+    object-fit: contain;
+}
+
+input,textarea {
+    width: 100%;
+    border: none;
+    background-color: var(--light-gray);
+    outline: none;
+    resize: none;
+    font-family: "Mulish", sans-serif;
 }
 
 input::placeholder, textarea::placeholder {
     font-size: 1.6rem;
     font-weight: 600;
     color: (var(--text-color));
+}
+
+textarea {
+    height: 126px;
+}
+
+.input-wrapper:last-child {
+    margin-bottom: 2.4rem;
 }
 
 #button-send-message {
@@ -148,6 +166,7 @@ input::placeholder, textarea::placeholder {
     color: #FFF;
     line-height: 2.4rem;
     padding: 1.2rem 1.6rem;
+    border-radius: 16px;
     cursor: pointer;
     background: var(--gradient-background);
 }
